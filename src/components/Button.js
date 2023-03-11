@@ -16,7 +16,6 @@ function Button ({children, rounded, variant, outline,...rest}) {
         'bg-yellow-300': variant === 'warning' && !outline,
         'bg-rose-500': variant === 'danger' && !outline,
     })
-    console.log(className);
     return (
         <button {...rest} className={className} >{children}</button>
     )
